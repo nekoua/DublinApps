@@ -1,0 +1,176 @@
+/* font-family: "RobotoRegular"; */
+@font-face {
+	font-family: "RobotoRegular";
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+	url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "RobotoLight"; */
+@font-face {
+	font-family: "RobotoLight";
+	src: url("../fonts/RobotoLight/RobotoLight.eot");
+	src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RobotoLight/RobotoLight.woff") format("woff"),
+	url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "RobotoMedium"; */
+@font-face {
+	font-family: "RobotoMedium";
+	src: url("../fonts/RobotoMedium/RobotoMedium.eot");
+	src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"),
+	url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "RobotoBold"; */
+@font-face {
+	font-family: "RobotoBold";
+	src: url("../fonts/RobotoBold/RobotoBold.eot");
+	src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RobotoBold/RobotoBold.woff") format("woff"),
+	url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "Fontin-Italic"; */
+@font-face {
+	font-family: "Fontin-Italic";
+	src: url("../fonts/Fontin2/Fontin-Italic.ttf");
+	src: url("../fonts/Fontin2/Fontin-Italic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;	    
+}
+/* font-family: "Fontin-Bold"; */
+@font-face {
+	font-family: "Fontin-Bold";
+	src: url("../fonts/Fontin2/Fontin-Bold.ttf");
+	src: url("../fonts/Fontin2/Fontin-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;	    
+}
+/* font-family: "Fontin-Regular"; */
+@font-face {
+	font-family: "Fontin-Regular";
+	src: url("../fonts/Fontin2/Fontin-Regular.ttf");
+	src: url("../fonts/Fontin2/Fontin-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;	    
+}
+/* font-family: "Fontin-SmallCaps"; */
+@font-face {
+	font-family: "Fontin-SmallCaps";
+	src: url("../fonts/Fontin2/Fontin-SmallCaps.ttf");
+	src: url("../fonts/Fontin2/Fontin-SmallCaps.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;	    
+}
+/* font-family: "FlareLightGothicRegular"; */
+@font-face {
+	font-family: "FlareLightGothicRegular";
+	src: url("../fonts/FlareLightGothicRegular/Flare-Light-Gothic-Regular.ttf");
+	src: url("../fonts/FlareLightGothicRegular/Flare-Light-Gothic-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;	    
+}
+/* font-family: "Franklin Gothic Book Italic"; */
+@font-face {
+	font-family: "Franklin Gothic Book Italic";
+	src: url("../fonts/FranklinGothicBook/Franklin Gothic Book Italic.ttf");
+	src: url("../fonts/FranklinGothicBook/Franklin Gothic Book Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;	    
+}
+/* font-family: "ChunkFive"; */
+@font-face {
+	font-family: "ChunkFive";
+	src: url("../fonts/ChunkFive/ChunkFive.ttf");
+	src: url("../fonts/ChunkFive/ChunkFive.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;	    
+}
+/* font-family: "AlexandriaFLF"; */
+@font-face {
+	font-family: "AlexandriaFLF";
+	src: url("../fonts/AlexandriaFLF/AlexandriaFLF.ttf");
+	src: url("../fonts/AlexandriaFLF/AlexandriaFLF.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;	    
+}
+/* font-family: "AlexandriaFLF-Bold"; */
+@font-face {
+	font-family: "AlexandriaFLF-Bold";
+	src: url("../fonts/AlexandriaFLF/AlexandriaFLF-Bold.ttf");
+	src: url("../fonts/AlexandriaFLF/AlexandriaFLF-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;	    
+}
+/* font-family: "AlexandriaFLF-BoldItalic"; */
+@font-face {
+	font-family: "AlexandriaFLF-BoldItalic";
+	src: url("../fonts/AlexandriaFLF/AlexandriaFLF-BoldItalic.ttf");
+	src: url("../fonts/AlexandriaFLF/AlexandriaFLF-BoldItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;	    
+}
+/* font-family: "AlexandriaFLF-Italic"; */
+@font-face {
+	font-family: "AlexandriaFLF-Italic";
+	src: url("../fonts/AlexandriaFLF/AlexandriaFLF-Italic.ttf");
+	src: url("../fonts/AlexandriaFLF/AlexandriaFLF-Italic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;	    
+}
+/* font-family: "ColabLig"; */
+@font-face {
+	font-family: "ColabLig";
+	src: url("../fonts/Colaborate/ColabLig.ttf");
+	src: url("../fonts/Colaborate/ColabLig.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;	    
+}
+/* font-family: "ColabMed"; */
+@font-face {
+	font-family: "ColabMed";
+	src: url("../fonts/Colaborate/ColabMed.ttf");
+	src: url("../fonts/Colaborate/ColabMed.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;	    
+}
+/* font-family: "ColabReg"; */
+@font-face {
+	font-family: "ColabReg";
+	src: url("../fonts/Colaborate/ColabReg.ttf");
+	src: url("../fonts/Colaborate/ColabReg.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;	    
+}
+/* font-family: "Contra"; */
+@font-face {
+	font-family: "Contra";
+	src: url("../fonts/Contra/CONTRA__.ttf");
+	src: url("../fonts/Contra/CONTRA__.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;	    
+}
+/* font-family: "Contra Italic"; */
+@font-face {
+	font-family: "Contra Italic";
+	src: url("../fonts/Contra/CONTRAI_.ttf");
+	src: url("../fonts/Contra/CONTRAI_.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;	    
+}
+/* font-family: "HelveticaNeue"; */
+@font-face {
+	font-family: "HelveticaNeue";
+	src: url("../fonts/HalveticaNeue/helveticaneuecyr-medium.otf");
+	src: url("../fonts/HalveticaNeue/helveticaneuecyr-medium.otf") format("opentype");
+	font-style: normal;
+	font-weight: normal;	    
+}

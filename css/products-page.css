@@ -1,0 +1,376 @@
+*::-webkit-input-placeholder {
+	color: rgb(190,190,190);
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: rgb(190,190,190);
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: rgb(190,190,190);
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: color: rgb(190,190,190);
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "RobotoRegular", sans-serif;
+	font-size: 16px;
+	background: linear-gradient(to bottom, rgb(27,27,45), rgb(231,232,233) 50%) no-repeat;
+	
+}	
+.main-conteiner{
+	width: 936px;
+	margin: 0 auto;
+	background-color: rgb(231,232,234);
+}
+/*------====== products-search-block ======------*/
+.products-search-block {
+	width: 936px;
+	margin: 30px auto 0 auto;	
+	height: 100px;
+	background: linear-gradient(to bottom, rgb(223,234,236), rgb(213,214,216) 50%) no-repeat;
+	border-radius: 10px 10px 0 0;
+	border-bottom: 1px solid rgb(247,247,247); 
+}
+.headline {
+	margin: 30px 0 0 30px;
+	font-family: ColabLig;
+	float: left;
+}
+
+.products-search-block h3 {
+	font-size: 27px;
+	color: rgb(80,80,80);
+	line-height: 100%;
+}
+
+.products-search-block p {
+	font-size: 15px;
+	color: rgb(95,115,144);
+	padding: 0 0 0 5px;
+	line-height: 100%;
+}
+
+.search-block {
+	display: inline-block;
+	position: relative;
+	margin: 36px 43px 0 0;
+	width: 250px;
+	height: 30px;
+	float: right;
+}
+/*-----Поле поиска-----*/
+#search-field {
+	width: 210px;
+	height: 28px;
+	position: relative;
+	background-color: rgb(250,250,250);
+	padding: 0 8px 0 30px;
+	font-family: HelveticaNeue;
+	font-size: 13px;
+	float: right;
+	border: 1px solid rgb(201,201,201);
+	border-radius: 20px;
+	
+}
+/*-----Кнопка поиска-----*/
+#search-button {
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 5px;
+	left: 7px;
+	cursor: pointer;
+	border: none;
+	border-radius: 2px;
+	background: url(..//images/TempSprite/SearchIcon.png) no-repeat 50% 50%;
+}
+
+#search-field:hover {
+	box-shadow: inset 0 0 5px 1px rgba(50,50,50,0.5);
+}
+
+/*------====== products-search-block end ======------*/
+/*------====== Slider body ======------*/
+#product-slider {
+	width: 816px;
+	height: 430px;
+	margin: 0px auto 0 auto;
+	position: relative;
+}
+#product-slider {
+	height: 400px;
+
+}
+.inner {
+	width: 500%;
+}
+.inner:after {
+	content: '';
+	display: block;
+	height: 0px;
+	clear: both;
+}
+.page {
+	float: left; width: 20%;
+	margin-top: 27px;
+}
+#overflow {
+	overflow: hidden;
+}
+#product-slider input {display: none;}
+
+#controls {
+	position: absolute;
+	width: 100%;
+	top: 39%;
+	left: 0px;
+	height: 50px;
+}
+
+#controls label {
+	display: none;
+	opacity: 0.6;
+	cursor: pointer;
+}
+#controls label:hover {
+	opacity: 0.8;
+}
+#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(5),
+#slide5:checked ~ #controls label:nth-child(1) {
+	width: 39px;
+	height: 39px;
+	background: url(..//images/TempSprite/arrow-right.png) no-repeat rgb(29,29,49) 50% 50%;
+	border-radius: 50%;
+	float: right;
+	margin-right: -40px;
+	display: block;
+}
+
+#slide1:checked ~ #controls label:nth-child(5),
+#slide2:checked ~ #controls label:nth-child(1),
+#slide3:checked ~ #controls label:nth-child(2),
+#slide4:checked ~ #controls label:nth-child(3),
+#slide5:checked ~ #controls label:nth-child(4) {
+	width: 39px;
+	height: 39px;
+	background: url(..//images/TempSprite/arrow-left.png) no-repeat rgb(29,29,49) 50% 50%;
+	border-radius: 50%;
+	float: left;
+	margin-left: -40px;
+	display: block;
+}
+
+#slide1:checked ~ #product-slider .inner { margin-left: 0; }
+#slide2:checked ~ #product-slider .inner { margin-left: -100%; }
+#slide3:checked ~ #product-slider .inner { margin-left: -200%; }
+#slide4:checked ~ #product-slider .inner { margin-left: -300%; }
+#slide5:checked ~ #product-slider .inner { margin-left: -400%; }
+
+
+#product-slider .inner {
+	-webkit-transition: all 0.8s ease-in-out;
+		 -moz-transition: all 0.8s ease-in-out;
+			-ms-transition: all 0.8s ease-in-out;
+			 -o-transition: all 0.8s ease-in-out;
+					transition: all 0.8s ease-in-out;
+}
+/*------====== Slider body end ======------*/
+
+
+/*------====== product slider content block ======------*/
+.slider-content-block {
+	list-style: none;
+	width: 816px;
+}
+
+.slider-content-block li {
+	float: left;
+	width: 272px;
+	height: 385px;
+}
+.slider-content-block li div {
+	width: 215px;
+	margin: 0 16px 0 16px;
+}
+.content-left {
+	
+}
+.slider-content-block .content-center {
+	margin: 0 auto;	
+}
+.content-right {
+	float: right;
+}
+.slider-content-block li h3 {
+	font-family: ColabLig;
+	font-size: 27px;
+	color: rgb(80,80,80);
+	line-height: 100%;
+	margin: 10px 0 5px 5px;
+}
+.slider-content-block li p {
+	font-family: ColabLig;
+	font-size: 15px;
+	color: rgb(95,115,144);
+	margin: 0 0 0 8px;
+	line-height: 100%;
+}
+.slider-content-block button {
+	margin: 20px 0 0 10px;
+	font-family: ColabReg;
+	width: 130px;
+	height: 34px;
+	border-radius: 5px;
+	border: none;
+	background: url(..//images/TempSprite/readmore-bg.png);
+	color: rgb(230,230,230);
+}
+.slider-content-block button:hover {
+	background: url(..//images/TempSprite/readmore-bg-click.png);
+}
+/*------====== Product slider content block end ======------*/
+
+/*------====== Product block ======------*/
+.product-block {
+	width: 800px;
+	margin: 0 auto;
+
+}
+.tabs {
+	position: relative;
+}
+.tabs > div, .tabs > input {
+  display: none;
+  min-height: 150px; 
+}
+.tabs label {
+	position: relative;
+	display: inline-block;
+	margin: 55px 6px 0 0px;
+	width: 104px;
+	height: 28px;
+	border-radius: 5px 5px 0 0;
+	border: 1px solid rgb(167,168,177);
+	text-align: center;
+	cursor: pointer;
+}
+
+.tabs label:nth-of-type(2) {
+	background: -webkit-radial-gradient( top, ellipse cover, rgb(210,210,212) 0%, rgb(192,192,192) 75%);
+	background: -moz-radial-gradient( top, ellipse cover, rgb(210,210,212) 0%, rgb(192,192,192) 75%);
+	background: -ms-radial-gradient( top, ellipse cover, rgb(210,210,212) 0%, rgb(192,192,192) 75%);
+	background: -o-radial-gradient( top, ellipse cover, rgb(210,210,212) 0%, rgb(192,192,192) 75%);
+	background: radial-gradient( top, ellipse cover, rgb(210,210,212) 0%, rgb(192,192,192) 75%);
+	background-repeat: repeat;
+	background-size: auto;
+	border-radius: 5px 5px 0 0;
+	color: rgb(250,250,250); 
+	border: 1px solid rgb(215,216,218);
+	border-bottom: none;
+}
+
+.tabs input[type="radio"]:checked + label {
+	border-bottom: none;
+	width: 137px;
+	color: rgb(255,255,255);
+	background: -webkit-radial-gradient( top, ellipse cover, rgb(72,72,92) 0%, rgb(54,54,71) 75%);
+	background: -moz-radial-gradient( top, ellipse cover, rgb(72,72,92) 0%, rgb(54,54,71) 75%);
+	background: -ms-radial-gradient( top, ellipse cover, rgb(72,72,92) 0%, rgb(54,54,71) 75%);
+	background: -o-radial-gradient( top, ellipse cover, rgb(72,72,92) 0%, rgb(54,54,71) 75%);
+	background: radial-gradient( top, ellipse cover, rgb(72,72,92) 0%, rgb(54,54,71) 75%);
+	background-repeat: repeat;
+	background-size: auto;
+}
+
+.tabs > input:nth-of-type(1):checked ~ div:nth-of-type(1),
+.tabs > input:nth-of-type(2):checked ~ div:nth-of-type(2) {
+	display: block;
+	padding: 40px 0 0 0;
+	border-top: 1px solid rgb(191,192,197); 
+	overflow: hidden;
+	min-height: 200px;
+}
+.apps-most-popular {
+  -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    	column-gap: 40px;
+
+  -webkit-column-count: 3;
+    -moz-column-count: 3;
+      column-count: 3;
+}
+.apps-recent {
+	-webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    	column-gap: 40px;
+
+  -webkit-column-count: 3;
+    -moz-column-count: 3;
+      column-count: 3;
+}
+
+.apps-block {
+	display: inline-block;
+  margin: 0 0 60px 0;
+  width: 240px;
+}
+
+.apps-block img {
+	float: left;
+	margin: 0 10px 0 0;
+
+}
+.apps-block h4 {
+	font-family: ColabLig;
+	font-size: 22px;
+	color: rgb(80,80,80);
+	line-height: 100%;
+	margin: 3px 0 3px 0;
+}
+.apps-block p {
+	font-family: ColabLig;
+	font-size: 12px;
+	color: rgb(95,115,144);	
+	line-height: 100%;
+}
+.apps-block button {
+	margin: 17px 0 0 0;
+	width: 95px;
+	height: 25px; 
+	border-radius: 5px;
+	border: none;
+	color: rgb(255,255,255);
+	font-family: ColabReg;
+	font-size: 13px;
+	background-image: url(..//images/TempSprite/read-more-bg-apps.png);
+}
+.apps-block button:hover {
+	background: url(..//images/TempSprite/read-more-bg-apps-click.png)
+}
+
+/*------====== Product block end ======------*/
+
+/*------====== Slider body ======------*/
+/*------====== Slider body end ======------*/

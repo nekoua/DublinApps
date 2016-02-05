@@ -1,0 +1,129 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.main-conteiner {
+	width: 936px;
+	margin: 0 auto;
+	background-color: rgb(231,232,234);
+}
+/*------====== products-search-block ======------*/
+
+.contact-edit-block {
+	display: inline-block;
+	padding: 43px 0 0 0;
+}
+.email-form {
+	width: 470px;
+	height: 488px;
+	border-right: 1px solid rgb(215,214,215);
+	display: inline-block;
+	float: left;
+}
+.email-form input {
+	display: block;
+	width: 345px;
+	height: 40px;
+	border-radius: 7px;
+	margin: 24px 0 0 64px;
+	font-family: ColabLig;
+	font-size: 21px;
+	border-top: 1px solid rgb(201,201,201);
+	border-right: 1px solid rgb(205,205,205);
+	border-bottom: 1px solid rgb(209,209,209);
+	border-left: 1px solid rgb(205,205,205);
+	padding: 0 10px 0 27px;
+	box-shadow: inset 0 1px 5px  -1px rgb(126,128,131), inset 0 5px 10px -15px rgb(126,128,131);
+}
+.email-form input:last-child {
+	width: 130px;
+	margin: 19px 0 0 279px;
+	border: none;
+	padding: 0;
+	text-align: center;
+	font-family: ColabReg;
+	font-size: 21px;
+	color: rgb(234,238,245);
+	background: url(..//images/TempSprite/btn_bg-background-button.png);
+}
+.email-form input:last-child:hover {
+	background: url(..//images/TempSprite/btn_bg-background-button-click.png);	
+}
+.email-form textarea {
+	width: 345px;
+	margin: 26px 0 0 64px;
+	height: 91px;	
+	border-radius: 7px;
+	border-top: 1px solid rgb(201,201,201);
+	border-right: 1px solid rgb(205,205,205);
+	border-bottom: 1px solid rgb(209,209,209);
+	border-left: 1px solid rgb(205,205,205);
+	font-family: ColabLig;
+	font-size: 21px;
+	resize: none;
+	padding: 10px 10px 0 27px;
+	box-shadow: inset 0 1px 5px  -1px rgb(126,128,131), inset 0 5px 10px -15px rgb(126,128,131);
+}
+.address-block {
+	background-color: rgb(235,237,240);
+	width: 382px;
+	height: 193px;
+	font-family: ColabLig;
+	border-radius: 10px;
+	margin: 14px 0 0 40px;
+	border: 1px solid rgb(214,215,217);	
+	padding: 10px 0 0 30px;
+	position: relative;
+}
+.address-block h5 {
+	font-size: 21px;
+	color: rgb(135,133,133);
+	margin-left: -8px;
+}
+.address-block p {
+	font-size: 17px;
+	line-height: 130%;
+	color: rgb(157,157,157);
+}
+.address-block span {
+	margin-left: 37px;
+}
+
+.contact-block {
+	float: right;
+	width: 466px;
+	position: relative;
+}
+
+
+.contact-block img {
+	width: 335px;
+	height: 282px;
+	margin: 15px 0 70px 64px;
+	text-align: center;
+}
+
+.contact-block .tultip {
+	width: 280px;
+	height: 160px;
+	left: 75px;
+	top: 204px;
+	position: absolute;
+	background: rgb(235,237,240);
+	-webkit-clip-path: polygon(25px 0, 0 0, 120px 150px);
+	-ms-clip-path: polygon(25px 0, 0 0, 120px 150px);
+	clip-path: polygon(25px 0, 0 0, 120px 150px);
+}
+.contact-block .tultip1 {
+	width: 280px;
+	height: 160px;
+	left: 75px;
+	top: 206px;
+	position: absolute;
+	background: rgb(214,215,217);
+	-webkit-clip-path: polygon(28px 0, 0 0, 124px 154px);
+	-ms-clip-path: polygon(25px 0, 0 0, 120px 150px);
+	clip-path: polygon(28px 0, 0 0, 124px 154px);
+}
