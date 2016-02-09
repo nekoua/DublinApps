@@ -207,42 +207,45 @@ body {
 	clear: both;
 }
 .blog-page {
-	float: left;
-	width: 20%
+	float: left; width: 20%
 }
 
 #blog-overflow {
 	overflow: hidden;
 }
-#blog-slider input {
-	display: none;
-}
+#blog-slider input {display: none;}
+
 #blog-controls {
-	
 	position: absolute;
 	width: 100%;
-	margin: 23px 0 0 0;
-	height: 25px;
-	background-color: orange;
+	top: 120px;
+	left: 0;
+	height: 50px;
 }
+
 #blog-controls label {
 	display: none;
+	opacity: 0.3;
 	cursor: pointer;
-
 }
+
 #blog-controls label:hover {
 	opacity: 0.8;
 }
+
 #blog-slide1:checked ~ #blog-controls label:nth-child(2),
 #blog-slide2:checked ~ #blog-controls label:nth-child(3),
 #blog-slide3:checked ~ #blog-controls label:nth-child(4),
 #blog-slide4:checked ~ #blog-controls label:nth-child(5),
 #blog-slide5:checked ~ #blog-controls label:nth-child(1) {
-	width: 27px;
-	height: 25px;
-	background-color: purple;
-	
-	display: inline-block;
+	width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-left: 20px solid #333;
+	border-bottom: 20px solid transparent;
+	float: right;
+	margin-right: -30px;
+	display: block;
 }
 
 #blog-slide1:checked ~ #blog-controls label:nth-child(5),
@@ -250,11 +253,14 @@ body {
 #blog-slide3:checked ~ #blog-controls label:nth-child(2),
 #blog-slide4:checked ~ #blog-controls label:nth-child(3),
 #blog-slide5:checked ~ #blog-controls label:nth-child(4) {
-	width: 27px;
-	height: 25px;
-	background-color: red;
-	
-	display: inline-block;
+	width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-right: 20px solid #333;
+	border-bottom: 20px solid transparent;
+	float: left;
+	margin-left: -27px;
+	display: block;
 }
 
 #blog-slide1:checked ~ #blog-slides .blog-inner { margin-left: 0; }
@@ -265,14 +271,12 @@ body {
 
 #blog-active {
 	text-align: center;
+	margin-top: 10px;
 }
 #blog-active label {
-	width: 27px;
-	height: 25px;
-	z-index: 1px;
-	position: relative;
-	margin: 23px 16px 0 0px;
-	background-color: rgb(102,102,126);
+	width: 15px;
+	height: 10px;
+	background-color: #CCC;
 	display: inline-block;
 	cursor: pointer;
 	-webkit-border-radius: 2px;
@@ -283,7 +287,7 @@ body {
 }
 
 #blog-active label:hover {
-	background-color: rgb(44,104,190);
+	background-color: #999;
 }
 
 #blog-slide1:checked ~ #blog-active label:nth-child(1),
@@ -291,7 +295,7 @@ body {
 #blog-slide3:checked ~ #blog-active label:nth-child(3),
 #blog-slide4:checked ~ #blog-active label:nth-child(4),
 #blog-slide5:checked ~ #blog-active label:nth-child(5) {
-	background-color: rgb(44,104,190);
+	background-color: #333;
 }
 
 #blog-slides .blog-inner {
