@@ -233,15 +233,16 @@ body {
 #blog-controls label:hover {
 	opacity: 0.8;
 }
-#blog-slide1:checked ~ #blog-controls label:nth-child(4),
-#blog-slide2:checked ~ #blog-controls label:nth-child(5),
-#blog-slide3:checked ~ #blog-controls label:nth-child(6),
-#blog-slide4:checked ~ #blog-controls label:nth-child(7),
-#blog-slide5:checked ~ #blog-controls label:nth-child(3) {
+
+#blog-active label:nth-child(2) ~ #blog-slide1:checked ~ #blog-controls label:nth-child(4),
+#blog-active label:nth-child(2) ~ #blog-slide2:checked ~ #blog-controls label:nth-child(5),
+#blog-active label:nth-child(2) ~ #blog-slide3:checked ~ #blog-controls label:nth-child(6),
+#blog-active label:nth-child(2) ~ #blog-slide4:checked ~ #blog-controls label:nth-child(7),
+#blog-active label:nth-child(2) ~ #blog-slide5:checked ~ #blog-controls label:nth-child(3) {
 	width: 27px;
 	height: 25px;
 	background-color: purple;
-	
+	float: right;
 	display: inline-block;
 }
 
@@ -253,7 +254,7 @@ body {
 	width: 27px;
 	height: 25px;
 	background-color: red;
-	
+	float: left;
 	display: inline-block;
 }
 

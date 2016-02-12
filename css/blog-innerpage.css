@@ -43,16 +43,17 @@ body {
 }
 /*------====== blog-conteiner ======------*/
 .blog-conteiner {
-	height: 1138px;
+	height: 1200px;
 }
 /*------====== blog-block ======------*/
-/*.blog-block {
-	height: 1055px;
+.blog-block {
+	height: 100%;
 	width: 712px;
 	background-color: rgb(231,232,234);
 	float: left;
-	background-color: yellow;
-}*/
+	display: inline-block;
+	padding: 25px 30px 0 40px;
+}
 /*------====== post-block ======------*/
 .post-block {
 	width: 658px;
@@ -61,42 +62,34 @@ body {
 	border-bottom: 1px solid rgb(208,217,230);
 	font-family: ColabLig;
 }
-.post-image {
-	height: 155px;
-	width: 200px;
-	border: 1px solid rgb(177,189,211);
-	float: left;
-	margin: 0 25px 0 0;
+.apps-post-image {
+	display: block;
+	margin: 35px 25px 35px 0;
 	text-align: center;
 }
 .blog-conteiner h4 {
-	font-family: ColabLig;
-	font-size: 27px;
-	color: rgb(80,80,80);
-	line-height: 100%;
-}
-.publication-date {
-	font-family: Arial;
-	font-size: 11px;
-	color: rgb(95,115,144);
 	display: inline-block;
-	margin: 0 18px 0 0;
-	line-height: 100%;
+	font-size: 27px;
 }
-.publication-author {
-	font-family: Arial;
+
+.blog-block span {
+	display: block;
+	margin: 0 0 0 10px;
+}
+.blog-block {
+	font-size: 15px;
+}
+.related-products-block p {
 	font-size: 12px;
 	color: rgb(95,115,144);
-	display: inline-block;
-	line-height: 100%;
+	margin: 0 0 25px 0;
 }
+
 .publication-text {
-	font-size: 15px;
-	color: rgb(130,129,129);
-	line-height: 130%;
+	margin: 20px 0 0 0;
 }
 .social-link-block {
-	float: left;
+	float: right;
 }
 .social-link-block img {
 	height: 20px;
@@ -104,6 +97,13 @@ body {
 	margin: 0 0 0 9px;
 	text-align: center;
 	line-height: 100%;
+}
+.bullet-text-block {
+	margin: 35px 0 0 0;
+}
+.bullet-text-block ul {
+	margin: 0 0 25px 20px;
+	line-height: 100%;	
 }
 .post-block button {
 	float: right;
@@ -120,6 +120,23 @@ body {
 .post-block button:hover {
 	box-shadow: inset 0 0 10px 5px rgba(0,0,0,.3);
 }
+/*------====== apps-block ======------*/
+
+.apps-block {
+  margin: 0 25px 0 0;
+  width: 115px;
+}
+.apps-block h4 {
+	font-size: 22px;
+}
+.apps-block p {
+	margin: 0;
+}
+.apps-block button {
+	margin: 10px 0 0 0;
+}	
+/*------====== apps-block end ======------*/
+
 /*------====== post-block end ======------*/
 
 /*------====== blog-block end ======------*/
@@ -130,183 +147,8 @@ body {
 	display: inline-block;
 }
 /*------====== slide-bar-block ======------*/
-.slide-bar-block {
-	width: 224px;
-	height: 100%;
-	float: right;
-	font-family: ColabLig;
-	box-shadow: inset 10px 0px 10px 0px rgba(222,223,225,0.5);
-		-moz-box-shadow: inset 10px 0px 10px 0px rgba(222,223,225,0.5);
-		-webkit-box-shadow: inset 10px 0px 10px 0px rgba(222,223,225,0.5);
-}
-.slide-bar {
-	width: 224px;
-	height: 620px;
-	float: right;
-	color: rgb(130,129,129);
-	font-size: 15px;
-	list-style: none;
-	line-height: 195%;
-}
-.slide-bar-one {
-	padding: 34px 0 0 20px;
-}
-.slide-bar-two {
-	padding: 15px 0 0 20px;
-}
-.slide-bar ul {
-	margin: 10px 0 0 20px;
-	list-style-image: url(..//images/TempSprite/bullet.png);
-}
-/*------====== slide-bar-block end ======------*/
-.advertisement-conteiner {
-	width: 224px;
-	padding: 0 0 20px 0;
-	float: right;
-	display: inline-block;
-}
-.advertisement-conteiner p {
-	text-align: center;
-	display: block;
-	width: 100px;
-	height: 35px;
-	line-height: 100%;
-	margin: 20% auto;
-	font-size: 17px;
-	color: rgb(130,129,129);
-}
-.advertisement-block {
-	height: 110px;
-	width: 193px;
-	border: 1px solid rgb(217,217,218);
-	margin: 20px 0 0 20px;
-	background-color: rgb(237,238,239);
-}
-/*------====== blog-conteiner end ======------*/
 
-/*------====== Slider blog ======------*/
 
-#blog-slider {
-	height: 1055px;
-	width: 712px;
-	background-color: rgb(231,232,234);
-	float: left;
-	background-color: yellow;
-	position: relative;
-}
-#blog-slides {
-		
-}
-.blog-inner {
-	width: 500%;
-}
-.blog-inner:after {
-	content: '';
-	display: block;
-	height: 0px;
-	clear: both;
-}
-.blog-page {
-	float: left; width: 20%
-}
-
-#blog-overflow {
-	overflow: hidden;
-}
-#blog-slider input {display: none;}
-
-#blog-controls {
-	position: absolute;
-	width: 100%;
-	top: 120px;
-	left: 0;
-	height: 50px;
-}
-
-#blog-controls label {
-	display: none;
-	opacity: 0.3;
-	cursor: pointer;
-}
-
-#blog-controls label:hover {
-	opacity: 0.8;
-}
-
-#blog-slide1:checked ~ #blog-controls label:nth-child(2),
-#blog-slide2:checked ~ #blog-controls label:nth-child(3),
-#blog-slide3:checked ~ #blog-controls label:nth-child(4),
-#blog-slide4:checked ~ #blog-controls label:nth-child(5),
-#blog-slide5:checked ~ #blog-controls label:nth-child(1) {
-	width: 0;
-	height: 0;
-	border-top: 20px solid transparent;
-	border-left: 20px solid #333;
-	border-bottom: 20px solid transparent;
-	float: right;
-	margin-right: -30px;
-	display: block;
-}
-
-#blog-slide1:checked ~ #blog-controls label:nth-child(5),
-#blog-slide2:checked ~ #blog-controls label:nth-child(1),
-#blog-slide3:checked ~ #blog-controls label:nth-child(2),
-#blog-slide4:checked ~ #blog-controls label:nth-child(3),
-#blog-slide5:checked ~ #blog-controls label:nth-child(4) {
-	width: 0;
-	height: 0;
-	border-top: 20px solid transparent;
-	border-right: 20px solid #333;
-	border-bottom: 20px solid transparent;
-	float: left;
-	margin-left: -27px;
-	display: block;
-}
-
-#blog-slide1:checked ~ #blog-slides .blog-inner { margin-left: 0; }
-#blog-slide2:checked ~ #blog-slides .blog-inner { margin-left: -100%; }
-#blog-slide3:checked ~ #blog-slides .blog-inner { margin-left: -200%; }
-#blog-slide4:checked ~ #blog-slides .blog-inner { margin-left: -300%; }
-#blog-slide5:checked ~ #blog-slides .blog-inner { margin-left: -400%; }
-
-#blog-active {
-	text-align: center;
-	margin-top: 10px;
-}
-#blog-active label {
-	width: 15px;
-	height: 10px;
-	background-color: #CCC;
-	display: inline-block;
-	cursor: pointer;
-	-webkit-border-radius: 2px;
-		 -moz-border-radius: 2px;
-		   -o-border-radius: 2px;
-	    -ms-border-radius: 2px;
-	        border-radius: 2px;
-}
-
-#blog-active label:hover {
-	background-color: #999;
-}
-
-#blog-slide1:checked ~ #blog-active label:nth-child(1),
-#blog-slide2:checked ~ #blog-active label:nth-child(2),
-#blog-slide3:checked ~ #blog-active label:nth-child(3),
-#blog-slide4:checked ~ #blog-active label:nth-child(4),
-#blog-slide5:checked ~ #blog-active label:nth-child(5) {
-	background-color: #333;
-}
-
-#blog-slides .blog-inner {
-	-webkit-transition: all 0.8s ease-in-out;
-		 -moz-transition: all 0.8s ease-in-out;
-			-ms-transition: all 0.8s ease-in-out;
-			 -o-transition: all 0.8s ease-in-out;
-					transition: all 0.8s ease-in-out;
-}
-
-/*------====== Slider blog end ======------*/
 
 
 

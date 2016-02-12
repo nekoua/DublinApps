@@ -1,0 +1,200 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.main-conteiner {
+	width: 936px;
+	margin: 0 auto;
+	background-color: rgb(231,232,234);
+}
+/*------====== products-search-block ======------*/
+.basket-block {
+	background-color: rgb(224,225,227);
+	display: inline-block;
+	float: right;
+	width: 166px;
+	height: 100%;
+	font-family: ColabReg;
+	border-radius: 0 10px 0 0;
+	box-shadow: inset 50px 0px 30px 0px rgba(213,214,215,0.5);
+		-moz-box-shadow: inset 50px 0px 30px 0px rgba(213,214,215,0.5);
+		-webkit-box-shadow: inset 50px 0px 30px 0px rgba(213,214,215,0.5);
+}
+.basket-image {
+	height: 33px;
+	width: 37px;
+	float: left;
+	margin: 26px 7px 0 18px;
+	font-size: 10px;
+}
+.basket-block .basket-sum {
+	font-size: 29px;
+	margin: 16px 0 0 0;
+	color: rgb(174,174,174);
+	text-shadow: 1px 1px 1px rgba(248,248,248, .8);
+}
+.basket-block .numbers-orders {
+	font-size: 17px;
+	color: rgb(164,163,163);
+	text-shadow: 1px 1px 1px rgba(247,247,247, .7);
+}
+.basket-block .basket-check-out {
+	font-size: 15px;
+	margin: 10px 0 0 23px;
+	color: rgb(158,156,156);
+	text-shadow: 1px 1px 1px rgba(245,245,245, .5);
+}
+.elements-block {
+	height: 626px;
+}
+.elements-block-left {
+	height: 488px;
+	width: 470px;
+	float: left;
+	display: inline-block;
+	margin: 43px 0 0 0;
+	border-right: 1px solid rgb(215,214,215);
+	background-color: orange;
+}
+.elements-block-right {
+	height: 488px;
+	width: 466px;
+	display: inline-block;
+	float: right;
+	margin: 43px 0 0 0;
+	background-color: grey;
+}
+.elements-search-block {
+	width: 250px;
+	height: 190px;
+	background: grey;
+	margin: 0 0 0 27px;
+}
+
+.search-block-elipse, .search-block-br, .search-block-double-btn, .search-block-select {
+	display: inline-block;
+	position: relative;
+	margin: 0 0 23px 0;
+	width: 250px;
+	height: 30px;
+	float: right;
+}
+/*-----Поле поиска-----*/
+.search-field, .search-field-br, .search-field-double-btn, .search-field-select {
+	width: 210px;
+	height: 28px;
+	position: relative;
+	background-color: rgb(250,250,250);
+	padding: 0 8px 0 30px;
+	font-family: HelveticaNeue;
+	font-size: 13px;
+	float: left;
+	border: 1px solid rgb(201,201,201);
+	border-radius: 20px;
+	
+}
+/*-----Кнопка поиска-----*/
+.search-button, .search-button-br, .search-button-double-btn, .search-button-checkbox {
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 5px;
+	left: 7px;
+	cursor: pointer;
+	border: none;
+	border-radius: 2px;
+	background: url(..//images/TempSprite/SearchIcon.png) no-repeat 50% 50%;
+}
+
+.search-field:hover {
+	box-shadow: inset 0 0 5px 1px rgba(50,50,50,0.5);
+}
+
+.search-field-br, .search-field-double-btn {
+	border-radius: 5px;
+}
+.search-button-two {
+	display: block;
+	position: absolute;
+	width: 57px;
+	height: 24px;
+	top: 3px;
+	right: 3px;
+	cursor: pointer;
+	border: none;
+	font-family: ColabLig;
+	font-size: 15px;
+	color: rgb(233,232,232);
+	border-radius: 7px;
+	background: rgb(83,83,97) url(..//images/TempSprite/search-btn-two.png) no-repeat 50% 50%;
+}
+.search-button-two:hover {
+		background: rgb(83,83,97) url(..//images/TempSprite/search-btn-two-click.png) no-repeat 50% 50%;
+}
+.search-block-select {
+	margin: 0;
+}
+.search-field-select {
+	width: 250px;
+	height: 30px;
+	border-radius: 5px;
+	padding: 0 0 0 25px;
+	color: rgb(190,190,190);
+}
+.btn-block {
+	background-color: grey;
+	margin: 42px 0 0 21px;
+	display: inline-block;
+}
+.btn-block input {
+	height: 34px;
+	width: 130px;
+	margin: 0 18px 0 0;
+	border: none;
+	border-radius: 10px;
+}
+.btn-block input:first-child {
+	background-color: rgb(45,106,193);
+}
+.btn-block input:nth-child(2) {
+	background-color: rgb(99,99,112);
+}
+.btn-block input:last-child {
+	margin: 0;
+	background-color: rgb(118,118,173);
+}
+.circle-btn-block {
+	margin: 33px 0 0 20px;
+	width: 152px;
+	height: 28px;
+	background-color: grey;
+}
+.circle-btn-block img {
+	border-radius: 50%;
+	border: none;
+	width: 28px;
+	height: 28px;
+	float: left;
+	margin: 0 13px 0 0;
+	background: url(..//images/TempSprite/circle-btn.png) no-repeat 50% 50%;
+	background-color: rgb(43,104,189);
+}
+.circle-btn-block button:nth-child(1) {
+	background: url(..//images/TempSprite/info-icon-circle-btn.png) no-repeat 50% 50%;
+}
+.circle-btn-block button:nth-child(2) {
+	background: url(..//images/TempSprite/no-circle-btn.png) no-repeat 50% 50%;
+}
+.circle-btn-block button:nth-child(3) {
+	background: url(..//images/TempSprite/yes-circle-btn.png) no-repeat 50% 50%;
+}
+.circle-btn-block button:nth-child(4) {
+	margin: 0;
+	background: url(..//images/TempSprite/download-circle-btn.png) no-repeat 50% 50%;
+}
+.circle-btn-block img:hover {
+	background: url(..//images/TempSprite/circle-btn-click.png) no-repeat 50% 50%;
+}
+/*------====== products-search-block end ======------*/
