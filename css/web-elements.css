@@ -55,7 +55,6 @@
 	display: inline-block;
 	margin: 43px 0 0 0;
 	border-right: 1px solid rgb(215,214,215);
-	background-color: orange;
 }
 .elements-block-right {
 	height: 488px;
@@ -63,12 +62,11 @@
 	display: inline-block;
 	float: right;
 	margin: 43px 0 0 0;
-	background-color: grey;
+
 }
 .elements-search-block {
 	width: 250px;
 	height: 190px;
-	background: grey;
 	margin: 0 0 0 27px;
 }
 
@@ -93,6 +91,13 @@
 	border: 1px solid rgb(201,201,201);
 	border-radius: 20px;
 	
+}
+.search-field-select {
+	background: rgb(250,250,250) url(..//images/TempSprite/dropdown.png) no-repeat 101% 50%;
+	overflow: hidden;
+	-webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
 }
 /*-----Кнопка поиска-----*/
 .search-button, .search-button-br, .search-button-double-btn, .search-button-checkbox {
@@ -144,7 +149,6 @@
 	color: rgb(190,190,190);
 }
 .btn-block {
-	background-color: grey;
 	margin: 42px 0 0 21px;
 	display: inline-block;
 }
@@ -154,26 +158,40 @@
 	margin: 0 18px 0 0;
 	border: none;
 	border-radius: 10px;
+	font-family: ColabReg;
+	font-size: 19px;
+	color: rgb(234,237,244);
 }
 .btn-block input:first-child {
-	background-color: rgb(45,106,193);
+	background: rgb(45,106,193) url(..//images/TempSprite/submit-blue.png) no-repeat 50% 50%;
+}
+.btn-block input:first-child:hover {
+	background: rgb(45,106,193) url(..//images/TempSprite/submit-blue-click.png) no-repeat 50% 50%;
 }
 .btn-block input:nth-child(2) {
-	background-color: rgb(99,99,112);
+	background: rgb(99,99,112) url(..//images/TempSprite/submit-grey.png) no-repeat 50% 50%;
+}
+.btn-block input:nth-child(2):hover {
+	background: rgb(99,99,112) url(..//images/TempSprite/submit-grey-click.png) no-repeat 50% 50%;
 }
 .btn-block input:last-child {
 	margin: 0;
-	background-color: rgb(118,118,173);
+	background: rgb(118,118,173) url(..//images/TempSprite/submit-purple.png) no-repeat 50% 50%;
 }
+.btn-block input:last-child:hover {
+	margin: 0;
+	background: rgb(118,118,173) url(..//images/TempSprite/submit-purple-click.png) no-repeat 50% 50%;
+}
+
 .circle-btn-block {
 	margin: 33px 0 0 20px;
 	width: 152px;
 	height: 28px;
-	background-color: grey;
 }
-.circle-btn-block img {
+.circle-btn-block button {
 	border-radius: 50%;
 	border: none;
+	position: relative;
 	width: 28px;
 	height: 28px;
 	float: left;
@@ -181,20 +199,58 @@
 	background: url(..//images/TempSprite/circle-btn.png) no-repeat 50% 50%;
 	background-color: rgb(43,104,189);
 }
-.circle-btn-block button:nth-child(1) {
-	background: url(..//images/TempSprite/info-icon-circle-btn.png) no-repeat 50% 50%;
+.circle-btn-block button img {
+	position: relative;
+	display: block;
+	margin: 0 auto;	
 }
-.circle-btn-block button:nth-child(2) {
-	background: url(..//images/TempSprite/no-circle-btn.png) no-repeat 50% 50%;
-}
-.circle-btn-block button:nth-child(3) {
-	background: url(..//images/TempSprite/yes-circle-btn.png) no-repeat 50% 50%;
-}
-.circle-btn-block button:nth-child(4) {
+
+.circle-btn-block button:last-child {
 	margin: 0;
-	background: url(..//images/TempSprite/download-circle-btn.png) no-repeat 50% 50%;
 }
-.circle-btn-block img:hover {
+.circle-btn-block button:hover {
 	background: url(..//images/TempSprite/circle-btn-click.png) no-repeat 50% 50%;
+	cursor: pointer;
 }
 /*------====== products-search-block end ======------*/
+
+/*------====== web-elements-boxes ======------*/
+.elements-block-right {
+	position: relative;
+}
+.web-elements-boxes {
+	height: 214px;
+	width: 286px;
+	position: absolute;
+	left: 49px;
+	top: 5px;
+	border: 1px solid rgb(203,203,205);
+	border-radius: 10px 10px 0 0;
+}
+.web-elements-boxes:nth-child(2) {
+	left: 100px;
+	top: 85px;
+}
+.web-elements-boxes span {
+	display: block;
+  background: -webkit-linear-gradient(rgb(225,225,226), rgb(205,205,207)) no-repeat;
+  background: -o-linear-gradient(rgb(225,225,226), rgb(205,205,207)) no-repeat;
+  background: linear-gradient(rgb(225,225,226), rgb(205,205,207)) no-repeat;
+	height: 41px;
+	border-bottom: 1px solid rgb(203,203,205);
+	border-radius: 9px 9px 0 0;
+}
+.web-elements-boxes span h4 {
+	font-family: ColabReg;
+	font-size: 19px;
+	line-height: 200%;
+	margin-left: 19px;
+	color: rgb(128,128,147);
+	text-shadow: 1px 1px 1px rgb(255,255,255);
+}
+.web-elements-boxes-content {
+	background-color: rgb(232,234,236);
+	height: 171px;
+	width: 284;
+}
+/*------====== web-elements-boxes end ======------*/
