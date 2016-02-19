@@ -27,7 +27,7 @@
 <body>
 	<div class="products-search-block">
 		<div class="headline">
-			<h3>Dublin`s iphone apps Online Demmonstration</h3>
+			<h3>Dublin’s iphone applications</h3>
 			<a href="#"><p>Lorem Ipsum is simply dummy</p></a>
 		</div>
 		<form class="search-block">
@@ -41,10 +41,11 @@
 			<h3>Dublin`s iphone applications</h3>
 			<a href="#"><p>Lorem Ipsum is simply dummy</p></a>
 			<div class="banner-block">
-			<img src="images/Temp-grafiks/ipad-banner.png" height="381" width="693" alt="Products banner">
-			<div class="price-lable"></div>
+				<img src="images/Temp-grafiks/ipad-banner.png" height="381" width="693" alt="Products banner">
+				<div class="price-lable"></div>
 			</div>
-			<button>Buy now</button>
+			<label title="Стандартное модальное окно" class="btn-buy " for="modal-1">Buy now</label>
+			<!--<button class="btn-buy">Buy now</button>-->
 		</div>	
 		<div class="product-description">
 			<h4>Dublin’s iphone applications</h4>
@@ -61,6 +62,78 @@
 				<li>Dummy text ever since the 1500s, when an unknown printer</li>
 			</ul>
 		</div>
+
+		<!-- Modal form -->
+
+
+		<div class="modal">
+			<input class="modal-open" id="modal-1" type="checkbox" hidden="">
+			<div class="modal-wrap" aria-hidden="true" role="dialog">
+				<label class="modal-overlay" for="modal-1"></label>
+				<div class="modal-dialog">
+
+					<div class="payment-block">
+						<div class="buy-block">
+							<h3>Dublin’s iphone applications</h3>
+							<a href="#"><p>Lorem Ipsum is simply dummy</p></a>
+							<div class="article-calculator">
+								<img src="images/TempSprite/calc-apps.png" alt="calc img">
+							<!--<form action="#">
+									<input type="number" min="01" max="99" step="01" value="00">
+								</form>-->
+								<form>
+									<label for="age">Enter your age</label>
+									<input type="text" pattern="[0-9]*" id="age" name="age">
+								</form>
+								<p>i pad application</p>
+							</div>
+							<span class="total-price">
+								<p>Total : 155 $</p>
+							</span>
+							<form class="pay-card-number-block">
+								<input type="search" name="search-field" class="card-number" placeholder="Credit card number" />
+								<input type="submit" name="search-button" value="Pay now" class="pay-card-btn" />
+							</form>
+							<div class="info-card-block">
+								<img src="images/TempSprite/info-icon.png" alt="inf">
+								<p>printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text </p>
+							</div>
+						</div>
+						<div class="paymant-system-block">
+							<a href=""><img src="images/TempSprite/paypal-label.png" alt="paypal 	icon"></a>
+							<h4>Paypal</h4>
+							<a href="#"><p>Lorem Ipsum is</p></a>
+						</div>
+					</div>
+
+					<div class="member-block">
+						<h3>Member Login</h3>
+						<a href="#"><p>Lorem Ipsum is simply dummy</p></a>
+						<form action="">
+							<input type="text" name="user-name" placeholder="User name">
+							<input type="text" name="psw" placeholder="Password">
+							<a href="#">Lost password</a>
+							<input type="submit" name="login-btn" value="Login">
+						</form>
+					</div>
+
+					<div class="yes-no-block">
+						<h3>You want do Continue with the operation</h3>
+						<a href="#"><p>Lorem Ipsum is simply dummy</p></a>
+						<form action="#">
+							<!--<input type="submit">
+							<input type="submit">-->
+							<button><img src="" alt="yes">Yes</button>
+							<button><img src="" alt="no">No</button>
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal form end -->
+
 	</div>
 	<footer>
 		<div class="footer-conteiner">
@@ -91,7 +164,7 @@
 				<span><p class="copypast">Design by cssauthor.com © 2012-2013 Valid HTML5 and CSS3.</p></span>
 			</div>
 		</footer>
-	
+
 
 
 
