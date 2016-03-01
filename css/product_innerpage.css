@@ -247,7 +247,7 @@ body {
 	border-right: 1px solid rgb(203,203,203);
 	border-bottom: 1px solid rgb(209,209,209);
 }
-.pay-card-btn {
+.pay-card-number-block .pay-card-btn {
 	display: block;
 	position: absolute;
 	width: 96px;
@@ -256,6 +256,7 @@ body {
 	right: 3px;
 	cursor: pointer;
 	border: none;
+	text-align: center;
 	font-family: ColabReg;
 	font-size: 19px;
 	color: rgb(233,232,232);
@@ -312,9 +313,52 @@ body {
 	height: 246px;
 	width: 402px;
 	margin: 188px auto;
-	background-color: rgb(233,232,232);
 	border-radius: 10px;
 	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.22), 0 19px 60px rgba(0, 0, 0, 0.3);
+	background: rgb(233,232,232) url(..//images/TempSprite/bg-img-login.png) no-repeat 100% 0%;
+}
+.member-block h3 {
+	display: inline-block;
+	margin: 20px 0 0 45px;
+	font-size: 27px;
+	color: rgb(90,90,90);
+}
+.member-block p {
+	margin: 0px 0 0 47px;
+	line-height: 100%;
+	font-size: 15px;
+}
+.member-block input[type=text] {
+	margin: 25px 0 0 49px;
+	width: 297px;
+	height: 34px;
+	padding: 0 0 0 15px;
+	border: 1px solid rgb(201,201,201);
+	border-radius: 5px;
+
+}
+.member-block input:nth-child(2) {
+	margin: 15px 0px 0 49px;
+}
+.lost-password {
+	display: inline-block;
+	margin: 23px 0 0 55px;
+	font-size: 15px;
+}
+.member-block .login-btn {
+	width: 96px;
+	height: 36px;
+	float: right;
+	text-align: center;
+	font-size: 19px;
+	margin: 15px 60px 0 0;
+	border: none;
+	border-radius: 5px;
+	background: rgb(54,54,70) url(..//images/TempSprite/login-btn.png) no-repeat 50% 50%;
+	color: rgb(224,224,224);
+}
+.member-block .login-btn:hover {
+	background: rgb(54,54,70) url(..//images/TempSprite/login-btn-click.png) no-repeat 50% 50%;
 }
 
 .yes-no-block {
@@ -325,5 +369,37 @@ body {
 	width: 421px;
 	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.22), 0 19px 60px rgba(0, 0, 0, 0.3);
 }
+.yes-no-block h3 {
+	display: inline-block;
+	margin: 20px 0 0 40px;
+	font-size: 21px;
+	color: rgb(90,90,90);
+}
+.yes-no-block p {
+	margin: 0px 0 0 40px;
+	line-height: 100%;
+}
+.yes-no-block button {
+	margin: 15px 0 0 40px;
+	width: 96px;
+	height: 36px;
+	border-radius: 7px;
+	border: none;
+	background: rgb(54,54,70) url(..//images/TempSprite/yes-no-btn-bg.png) no-repeat 50% 50%;
+	color: rgb(224,224,224);
+}
+.yes-no-block button:hover {
+	background: rgb(54,54,70) url(..//images/TempSprite/yes-no-btn-bg-click.png) no-repeat 50% 50%;
+}
 
+.yes-no-block button:last-child {
+	margin: 15px 0 0 23px;
+}
+.yes-no-block button img {
+	height: 22px;
+	width: 22px;
+	padding: 0;
+	border-radius: 5px;
+	margin: 0px 10px 0 -10px;
+}
 /*------====== modal-dialog end ======------*/

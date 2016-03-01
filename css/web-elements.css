@@ -97,7 +97,7 @@
 	overflow: hidden;
 	-webkit-appearance: none;
    -moz-appearance: none;
-   appearance: none;
+   appearance: none;	
 }
 /*-----Кнопка поиска-----*/
 .search-button, .search-button-br, .search-button-double-btn, .search-button-checkbox {

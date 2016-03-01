@@ -126,7 +126,6 @@ body {
 .blog-slide-nav {
 	height: 83px;
 	width: 712px;
-	background-color: lime;
 	display: inline-block;
 }
 /*------====== slide-bar-block ======------*/
@@ -191,7 +190,6 @@ body {
 	width: 712px;
 	background-color: rgb(231,232,234);
 	float: left;
-	background-color: yellow;
 	position: relative;
 }
 #blog-slides {
@@ -220,10 +218,9 @@ body {
 #blog-controls {
 	
 	position: absolute;
-	width: 100%;
-	margin: 0px 0 0 0;
+	width: 305px;
+	margin: 23px 0px 0 198px;
 	height: 25px;
-	background-color: orange;
 }
 #blog-controls label {
 	/*display: none;*/
@@ -231,31 +228,60 @@ body {
 
 }
 #blog-controls label:hover {
-	opacity: 0.8;
+	opacity: 0.9;
 }
-
+/*
 #blog-active label:nth-child(2) ~ #blog-slide1:checked ~ #blog-controls label:nth-child(4),
 #blog-active label:nth-child(2) ~ #blog-slide2:checked ~ #blog-controls label:nth-child(5),
 #blog-active label:nth-child(2) ~ #blog-slide3:checked ~ #blog-controls label:nth-child(6),
 #blog-active label:nth-child(2) ~ #blog-slide4:checked ~ #blog-controls label:nth-child(7),
 #blog-active label:nth-child(2) ~ #blog-slide5:checked ~ #blog-controls label:nth-child(3) {
 	width: 27px;
-	height: 25px;
+	height: 55px;
 	background-color: purple;
 	float: right;
 	display: inline-block;
-}
+}*/
 
-#blog-slide1:checked ~ #blog-controls label:nth-child(7),
-#blog-slide2:checked ~ #blog-controls label:nth-child(3),
-#blog-slide3:checked ~ #blog-controls label:nth-child(4),
-#blog-slide4:checked ~ #blog-controls label:nth-child(5),
-#blog-slide5:checked ~ #blog-controls label:nth-child(6) {
+#blog-slide1:checked ~ #blog-controls label:nth-child(6),
+#blog-slide2:checked ~ #blog-controls label:nth-child(2),
+#blog-slide3:checked ~ #blog-controls label:nth-child(3),
+#blog-slide4:checked ~ #blog-controls label:nth-child(4),
+#blog-slide5:checked ~ #blog-controls label:nth-child(5) {
 	width: 27px;
 	height: 25px;
-	background-color: red;
 	float: left;
 	display: inline-block;
+	border: 1px solid rgb(95,115,128);
+	background: rgb(102,102,126) url(..//images/TempSprite/left-doble-arow.png) no-repeat 50% 50%;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-border-radius: 3px;
+		 -moz-border-radius: 3px;
+		   -o-border-radius: 3px;
+	    -ms-border-radius: 3px;
+	        border-radius: 3px;
+}
+
+#blog-slide1:checked ~ #blog-controls label:nth-child(3),
+#blog-slide2:checked ~ #blog-controls label:nth-child(4),
+#blog-slide3:checked ~ #blog-controls label:nth-child(5),
+#blog-slide4:checked ~ #blog-controls label:nth-child(6),
+#blog-slide5:checked ~ #blog-controls label:nth-child(2) {
+	
+	width: 27px;
+	height: 25px;
+	float: right;
+	display: inline-block;
+	border: 1px solid rgb(95,115,128);
+	background: rgb(102,102,126) url(..//images/TempSprite/right-doble-arow.png) no-repeat 50% 50%;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-border-radius: 3px;
+		 -moz-border-radius: 3px;
+		   -o-border-radius: 3px;
+	    -ms-border-radius: 3px;
+	        border-radius: 3px;
 }
 
 #blog-slide1:checked ~ #blog-slides .blog-inner { margin-left: 0; }
@@ -274,9 +300,13 @@ body {
 	position: relative;
 	margin: 23px 16px 0 0px;
 	border: 1px solid rgb(95,115,128);
-	background-color: rgb(102,102,126);
+	background: rgb(102,102,126) url(..//images/TempSprite/slider-btn-bg.png) no-repeat 50% 50%;
 	display: inline-block;
 	cursor: pointer;
+	font-family: Arial;
+	font-size: 11px;
+	color: white;
+	line-height: 200%;
 	-webkit-border-radius: 3px;
 		 -moz-border-radius: 3px;
 		   -o-border-radius: 3px;
@@ -285,23 +315,33 @@ body {
 }
 
 #blog-active label:hover {
-	background-color: rgb(44,104,190);
+	background: rgb(44,104,190) url(..//images/TempSprite/slider-btn-bg-blue.png) no-repeat 50% 50%;
 }
-
+ 
 #blog-active label:first-child {
-	width: 60px;
+	width: 50px;
+	margin: 23px 60px 0 0;
+	background: rgb(102,102,126) url(..//images/TempSprite/slider-btn-bg-big.png) no-repeat 50% 50%;
+	}
+#blog-active label:first-child:hover {
+	opacity: 0.9;
 }
 
 #blog-active label:last-child {
 	width: 60px;
+	margin: 23px 0 0 44px;
+	background: rgb(102,102,126) url(..//images/TempSprite/slider-btn-bg-big.png) no-repeat 50% 50%;
+}
+#blog-active label:last-child:hover {
+	opacity: 0.9;
 }
 
-#blog-slide1:checked ~ #blog-active label:nth-child(3),
-#blog-slide2:checked ~ #blog-active label:nth-child(4),
-#blog-slide3:checked ~ #blog-active label:nth-child(5),
-#blog-slide4:checked ~ #blog-active label:nth-child(6),
-#blog-slide5:checked ~ #blog-active label:nth-child(7) {
-	background-color: rgb(44,104,190);
+#blog-slide1:checked ~ #blog-active label:nth-child(2),
+#blog-slide2:checked ~ #blog-active label:nth-child(3),
+#blog-slide3:checked ~ #blog-active label:nth-child(4),
+#blog-slide4:checked ~ #blog-active label:nth-child(5),
+#blog-slide5:checked ~ #blog-active label:nth-child(6) {
+	background: rgb(44,104,19) url(..//images/TempSprite/slider-btn-bg-blue.png) no-repeat 50% 50%;
 }
 
 #blog-slides .blog-inner {

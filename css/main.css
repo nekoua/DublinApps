@@ -1,17 +1,17 @@
 *::-webkit-input-placeholder {
-	color: #666;
+	color: rgb(190,190,190);
 	opacity: 1;
 }
 *:-moz-placeholder {
-	color: #666;
+	color: rgb(190,190,190);
 	opacity: 1;
 }
 *::-moz-placeholder {
-	color: #666;
+	color: rgb(190,190,190);
 	opacity: 1;
 }
 *:-ms-input-placeholder {
-	color: #666;
+	color: rgb(190,190,190);
 	opacity: 1;
 }
 
@@ -41,6 +41,7 @@ body {
 }
 header {
 	height: 100px;
+	margin: 0 auto;
 }
 
 hgroup {
@@ -80,10 +81,15 @@ hgroup p {
 	margin-left: 49px;
 	line-height: 87%;
 }
+.header {
+	width: 998px;
+	margin: 0 auto;
+}
 .header nav {
 	float: right;
 	height: 29px;
 	margin: 51px 73px 0 0;
+	
 }
 .header nav ul {
 	list-style: none;
@@ -363,11 +369,11 @@ hgroup p {
 .text-slider-block {
 		
 	border-top-width: 1px;
-	border-top-color: #000;
+	border-top-color: rgb(217,217,218);
 	border-top-style: solid;
   
   border-bottom-width: 1px;
-	border-bottom-color: #000;
+	border-bottom-color: rgb(217,217,218);
 	border-bottom-style: solid;
 
 	margin: 35px 0 0 0;
@@ -649,12 +655,13 @@ footer {
 	border-bottom: 1px solid rgb(78,78,93);
 	border-left: 1px solid rgb(67,67,82);
 }
-.subscribe {
+.newsletter .subscribe {
 	height: 26px;
 	width: 85px;
 	margin: 17px 0 0 0;
 	color: rgb(54,54,72);
 	border: none;
+	text-align: center;
 	border-radius: 7px;
 }
 .contact-form {
@@ -704,6 +711,7 @@ footer {
 	border-radius: 7px;
 	float: right;
 	padding: 0;
+	text-align: center;
 	margin: 16px 4px 0 0;
 	background-color: rgb(255,255,255);
 }

@@ -24,6 +24,27 @@
 	<link rel="stylesheet" href="css/product-damo-page.css" />
 	<link rel="stylesheet" href="css/media.css" />
 </head>
+
+<header>
+			<div class="header">
+				<hgroup>
+					<a href="index.html"><img src="..//DublinApps/images/Temp-grafiks/Logo-image.png" height="37" width="37" alt="Logo"></a>
+					<h1>Dublin Apps</h1>
+					<a href="index.html" class="label">Dublin Apps</a>
+					<p>ipad applications</p>
+				</hgroup>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="products-page.html">ipad apps</a></li>
+						<li><a href="blog_page.html">Demomstrations</a></li>
+						<li><a href="product-damo-page.html">Leopards media</a></li>
+						<li><a href="contact-page.html">Connect us</a></li>
+					</ul>
+				</nav>
+			</div>	
+		</header>
+
 <body>
 	<div class="products-search-block">
 		<div class="headline">
@@ -81,7 +102,7 @@
 							<!--<form action="#">
 									<input type="number" min="01" max="99" step="01" value="00">
 								</form>-->
-								<form>
+								<form action="#">  
 									<label for="age">Enter your age</label>
 									<input type="text" pattern="[0-9]*" id="age" name="age">
 								</form>
@@ -90,7 +111,7 @@
 							<span class="total-price">
 								<p>Total : 155 $</p>
 							</span>
-							<form class="pay-card-number-block">
+							<form action="web_elements.html" method="post" class="pay-card-number-block" >
 								<input type="search" name="search-field" class="card-number" placeholder="Credit card number" />
 								<input type="submit" name="search-button" value="Pay now" class="pay-card-btn" />
 							</form>
@@ -112,8 +133,8 @@
 						<form action="">
 							<input type="text" name="user-name" placeholder="User name">
 							<input type="text" name="psw" placeholder="Password">
-							<a href="#">Lost password</a>
-							<input type="submit" name="login-btn" value="Login">
+							<a href="#" class="lost-password" >Lost password</a>
+							<input type="submit" class="login-btn" name="login-btn" value="Login">
 						</form>
 					</div>
 
@@ -123,8 +144,8 @@
 						<form action="#">
 							<!--<input type="submit">
 							<input type="submit">-->
-							<button><img src="" alt="yes">Yes</button>
-							<button><img src="" alt="no">No</button>
+							<button><img src="images/TempSprite/btn-yes-img.png" alt="yes">Yes</button>
+							<button><img src="images/TempSprite/btn-no-img.png" alt="no">No</button>
 						</form>
 					</div>
 
