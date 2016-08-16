@@ -40,7 +40,7 @@ body {
 	margin: 0 auto;
 }
 header {
-	height: 100px;
+	min-height: 100px;
 	margin: 0 auto;
 }
 
@@ -48,14 +48,16 @@ hgroup {
 	float: left;
 	display: inline-block;
 	margin-top: 38px;
+
 	width: 250px;
-	height: 60px;
+	min-height: 60px;
+	margin-right: 120px;
 }
 
 hgroup img {
 	display: block;
 	float: left;
-	height: 40px;
+	min-height: 40px;
 	width: 40px;
 	margin: 0 6px 0 0;
 }
@@ -72,7 +74,7 @@ hgroup h1{
 	float: left;
 }
 
-hgroup p {
+.lable-text {
 	margin: 0px 0 0 5px;
 	color: #FFF;
 	float: left;
@@ -86,10 +88,8 @@ hgroup p {
 	margin: 0 auto;
 }
 .header nav {
-	float: right;
-	height: 29px;
-	margin: 51px 73px 0 0;
-	
+	display: inline-block;
+	margin: 51px 0px 0 0;
 }
 .header nav ul {
 	list-style: none;
@@ -101,12 +101,12 @@ hgroup p {
 	color: rgb(215,215,215);
 	font-family: ColabLig;
 	font-size: 17px;
-	height: 29px;
+	min-height: 29px;
 	padding: 0 10px 0 10px;
 	border-radius: 6px;
 	line-height: 165%;
 	margin-right: 10px;
-	display: inline-block;	
+	display: inline-block;
 }
 .header nav ul li a:hover {
 	background-color: rgb(210,210,210);
@@ -115,12 +115,12 @@ hgroup p {
 /*------====== Slider body ======------*/
 #slider {
 	width: 998px;
-	height: 445px;
+	min-height: 445px;
 	margin: 0 auto;
 	position: relative;
 }
 #slides {
-	height: 445px;
+	min-height: 445px;
 }
 .inner {
 	width: 500%;
@@ -145,7 +145,7 @@ hgroup p {
 	width: 100%;
 	top: 39%;
 	left: 0;
-	height: 50px;
+	min-height: 50px;
 }
 
 #controls label {
@@ -164,7 +164,7 @@ hgroup p {
 #slide4:checked ~ #controls label:nth-child(5),
 #slide5:checked ~ #controls label:nth-child(1) {
 	width: 39px;
-	height: 39px;
+	min-height: 39px;
 	background: url(..//images/TempSprite/arrow-right.png) no-repeat rgb(29,29,49) 50% 50%;
 	border-radius: 50%;
 	float: right;
@@ -178,7 +178,7 @@ hgroup p {
 #slide4:checked ~ #controls label:nth-child(3),
 #slide5:checked ~ #controls label:nth-child(4) {
 	width: 39px;
-	height: 39px;
+	min-height: 39px;
 	background: url(..//images/TempSprite/arrow-left.png) no-repeat rgb(29,29,49) 50% 50%;
 	border-radius: 50%;
 	float: left;
@@ -204,7 +204,7 @@ hgroup p {
 /*------====== Slider page ======------*/
 .page-one-left-block {
 	width: 370px;
-	height: 445px;
+	min-height: 445px;
 	float: left;
 	text-align: right;
 }
@@ -235,7 +235,7 @@ hgroup p {
 .page-one-left-block button {
 	margin: 25px 35px 0 0;
 	width: 181px;
-	height: 45px;
+	min-height: 45px;
 	border: 1px solid rgb(110,154,216);
 	border-radius: 8px;
 	font-family: ColabMed;
@@ -250,7 +250,7 @@ hgroup p {
 							0 0 15px 10px rgba(0,0,0,0.3)*/;
   
  width: 150px;
-    height: 5px;
+    min-height: 5px;
     bottom: 0;
     margin: 34px 0 0 170px;
     background: rgba(36, 36, 46, .15);
@@ -267,7 +267,7 @@ hgroup p {
 /*------====== Content navigation ======------*/
 
 .content nav ul {
-	height: 154px;
+	min-height: 154px;
 	list-style: none;
 	position: relative;
 }
@@ -283,7 +283,7 @@ hgroup p {
 .content nav ul li a {
 	display: block;
 	width: 238px;
-	height: 154px;
+	min-height: 154px;
 	border-radius: 5px;
 }
  
@@ -319,12 +319,11 @@ hgroup p {
 .category ul {
 	position: relative;
 	list-style: none;
-	height: 115px;
+	min-height: 115px;
 	text-align: justify;
 }
 .category ul:after {
   width: 100%;
-  height: 0px;
   visibility: hidden;
   overflow: hidden;
   content: "";
@@ -333,13 +332,13 @@ hgroup p {
 .category ul li {
 	display: inline-block;
 	margin: 0 14px 0 14px;
-	height: 115px;
+	min-height: 115px;
 	width: 300px;
 	text-align: left;
 	font-family: ColabLig;
 }
 .category ul li img {
-	height: 33px;
+	min-height: 33px;
 	width: 33px;
 	float: left;
 	margin: 0 9px 0 0;
@@ -593,7 +592,6 @@ footer {
 
 .footer-conteiner {
 	width: 998px;
-	height: 290px;
 	margin: 0 auto;
 }
 .footer-conteiner h4 {
@@ -601,7 +599,7 @@ footer {
 	color: rgb(255,255,255);
 }
 .twitter-updates {
-	height: 85px;
+	min-height: 85px;
 	border-top: 1px solid rgb(189,189,196);
 	border-bottom: 1px solid rgb(213,213,223);
 }
@@ -631,7 +629,7 @@ footer {
 
 .newsletter {
 	display: inline-block;
-	height: 120px;
+	min-height: 120px;
 	width: 350px;	
 	font-family: ColabLig;
 	margin: 10px 0 0 30px; 
@@ -641,7 +639,7 @@ footer {
 	color: rgb(183,183,188);
 }
 .email-adr-field {
-	height: 26px;
+	min-height: 26px;
 	width: 211px;
 	margin: 17px 15px 0 0;
 	float: left;
@@ -656,7 +654,7 @@ footer {
 	border-left: 1px solid rgb(67,67,82);
 }
 .newsletter .subscribe {
-	height: 26px;
+	min-height: 26px;
 	width: 85px;
 	margin: 17px 0 0 0;
 	color: rgb(54,54,72);
@@ -665,7 +663,7 @@ footer {
 	border-radius: 7px;
 }
 .contact-form {
-	height: 150px;
+	min-height: 150px;
 	width: 415px;
 	float: right;
 	font-family: ColabLig;
@@ -676,7 +674,7 @@ footer {
 	display: block;
 	position: relative;
 	margin: 5px 0 11px 0;
-	height: 26px;
+	min-height: 26px;
 	width: 211px;
 	border-radius: 7px;
 	padding: 0 0 0 13px;
@@ -692,7 +690,7 @@ footer {
 	display: inline-block;
 	margin: 5px 0 0 0;
 	width: 190px;
-	height: 100px;
+	min-height: 100px;
 	resize: none;
 	background-color: rgb(36,36,57);
 	border-radius: 7px;
@@ -703,7 +701,7 @@ footer {
 	border-left: 1px solid rgb(67,67,82);
 }
 .contact-form .submit-btn {
-	height: 26px;
+	min-height: 26px;
 	width: 85px;
 	margin: 17px 0 0 0;
 	color: rgb(54,54,72);
